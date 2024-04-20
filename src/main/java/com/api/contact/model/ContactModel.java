@@ -10,14 +10,14 @@ public class ContactModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Long id;
+    private Long id;
 
     @Column(nullable = false)
-    public String Name;
+    private String name;
 
     @Column(nullable = false, unique = true)
-    public String Phone;
+    private String phone;
 
     @Column(nullable = false)
-    public Boolean IsActive;
+    private Boolean isActive;
 }
